@@ -74,6 +74,7 @@ flowchart TB
     class C decisao
 ```
 </div>
+
 ### Os três componentes inteligentes
 
 | Componente | O que faz | Apoios observados na arquitetura original |
@@ -115,6 +116,7 @@ flowchart TB
     class E dados
 ```
 </div>
+
 **Em palavras:** o classificador identifica um pedido de registro; o agente interpreta a mensagem com apoio de seu próprio nó `OpenAI Chat Model` e de um analisador de saída estruturada; o fluxo possui uma operação para **adicionar uma linha no Google Sheets** e outra para **responder pelo Telegram**.
 
 ### Caminho 2 — Consultar despesas
@@ -139,6 +141,7 @@ flowchart TB
 ```
 
 </div>
+
 **Em palavras:** o classificador identifica uma consulta; o agente, conectado ao seu próprio `OpenAI Chat Model`, usa a **leitura do Google Sheets** para acessar os registros e dispõe de uma **calculadora** para apoiar operações matemáticas; depois, devolve uma resposta no Telegram.
 
 ## 05 // Tecnologias utilizadas
